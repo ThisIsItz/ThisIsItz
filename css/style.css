@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-@import url('index-style.css');
+@import url('index-style1.css');
+@import url('index-style2.css');
+@import url('index-responsive.css');
 
 html, body {
     height: 100%;
@@ -83,13 +85,17 @@ body {
     padding-top: 50px;
 }
 
-#info{
+
+    #info{
     grid-area: top;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
-}
+        text-align: center;
+    padding: 0px;
+    }
+
 
 #text{
     grid-area: bottom;
@@ -129,6 +135,7 @@ body {
     transition-duration: 0.4s;
     text-decoration: none;
     color: black;
+    margin-bottom: 10px;
 }
 
 .button:hover {
@@ -169,33 +176,46 @@ body {
 }
 
 .me{
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 30%;
     border-radius: 20px;
     margin: 10px;
 }
 
-    @media screen and (min-width:1000px){
-        #main{
-            margin-left: 200px;
-            margin-right: 200px;
-            margin-bottom: 50px;
-        }
-        
-        .me{
-            margin-left: 40px;
-            margin-right: 40px;
-        }
-        
-        .myinfo{
-            margin-right: 60px;
-        }
-        
-        #info{
-            justify-content: space-around;
-        }
+.logo{
+    display: none;
+}
 
+@media screen and (min-width:900px){
+    #main{
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 50px;
     }
+
+    .me{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .myinfo{
+        margin-right: 60px;
+    }
+
+    #info{
+        grid-area: top;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    .logo{
+        display: block;
+    }
+
+}
 
 
 
