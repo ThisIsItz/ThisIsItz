@@ -1,0 +1,41 @@
+@media screen and (min-width:1000px){
+    #projects{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas: 
+            "top top top"
+            "p1 p2 p3";
+    }
+
+    .projectstxt{
+        grid-area: top;
+        justify-content: center;                    
+    }
+
+    #project1{
+        grid-area: p1;
+    }
+
+    #project2{
+        grid-area: p2;
+    }
+
+    #project3{
+        grid-area: p3; 
+    }
+
+    .card2{
+        width: 80%;
+        height: auto;
+    }
+
+    .projectimg{
+        height: 300px;
+    }
+    
+    .yo{
+        display: block;
+    }
+}

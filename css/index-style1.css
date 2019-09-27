@@ -1,0 +1,29 @@
+#principal{
+    margin-top: 20px;
+
+}
+
+#aboutme, #skills, #blog{
+    padding: 20px;
+}
+
+#aboutme{
+    margin-top: 50px;
+    background-image: url('https://image.freepik.com/foto-gratis/diseno-web-html-php-codigo-fuente_118557-15.jpg');
+    /*Vector created by GarryKillian - www.freepik.es*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    color: white;
+}
+
+#skills{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: aliceblue;
+    font-family: 'Righteous', cursive;
+}
